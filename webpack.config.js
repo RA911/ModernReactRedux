@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: {
+    entry: { 
         app: './src/index.js'
     },
     output: {
@@ -10,7 +10,8 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist'
+        //contentBase: path.resolve(__dirname),
+        publicPath: '/dist'
     },
     module: {
         rules: [
