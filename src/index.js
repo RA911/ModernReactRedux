@@ -1,16 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/app.js'
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        const { message } = this.props;
-        return <h1>{message}</h1>
-    }
-}
-
-//const App = (params) => <h1>{params.message}</h1>;
-
-ReactDOM.render(<App message='Hello niggas!' />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
