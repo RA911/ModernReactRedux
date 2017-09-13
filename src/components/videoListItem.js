@@ -1,7 +1,9 @@
 import React from 'react';
 
-const VideoListItem = (props) => (
-    <li>{props.title}</li>
+const VideoListItem = ({ video, onVideoSelected }) => (
+    <li onClick={() => onVideoSelected(video)}>
+        {video.snippet.title}
+    </li>
 );
 
 export default VideoListItem;
