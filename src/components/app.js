@@ -1,12 +1,14 @@
 import React from 'react';
-import BookList from '../containers/bookList.js';
-import SelectedBook from '../containers/selectedBook.js';
+import SearchBar from '../containers/searchBar.js';
+import CityList from '../containers/cityList.js';
 
-const App = () => (
-    <div>
-        <BookList />
-        <SelectedBook />
-    </div>
-);
+const App = () => {
+    return (
+        <div>
+            <SearchBar />
+            <CityList />
+        </div>
+    );
+}
 
 export default App;
